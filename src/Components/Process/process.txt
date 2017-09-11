@@ -1,0 +1,128 @@
+<div className="flex flex-middle">
+<h1> Process </h1>
+</div>
+
+<div className="process-container">
+
+<div className="process-row">
+    <div className="process-box">
+
+    </div>
+    <div className="process-text">
+      <h3>Single Origin</h3>
+    </div>
+    <div className="process-button">
+      <button> LEARN </button>
+    </div>
+  </div>
+
+    <div className="process-row">
+      <div className="process-box">
+
+      </div>
+      <div className="process-text">
+        <h3>Fusion Ground</h3>
+      </div>
+      <div className="process-button">
+        <button> LEARN </button>
+      </div>
+    </div>
+
+    <div className="process-row">
+      <div className="process-box">
+
+      </div>
+      <div className="process-text">
+        <h3>Brewed By Us</h3>
+      </div>
+      <div className="process-button">
+        <button> LEARN </button>
+      </div>
+    </div>
+
+    <div className="process-row">
+      <div className="process-box">
+
+      </div>
+      <div className="process-text">
+        <h3>Tilted to Taste</h3>
+      </div>
+      <div className="process-button">
+        <button> LEARN </button>
+      </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+// PROCESS SECTION //
+.process {
+  position: relative;
+  top: -115px;
+}
+
+.process-container {
+  padding: 25px 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+
+  .process-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 15px;
+
+
+    .process-box {
+      height: 15em;
+      width: 15em;
+      background-color: lightgray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+      .process-text {
+        padding-top: 10px;
+      }
+
+      .process-button {
+        button {
+          padding: 13px 25px;
+          border-radius: 25px;
+          border: 2px solid lightgray;
+          background-color: transparent;
+          font-weight: 400;
+          font-size: 12px;
+          letter-spacing: 3px;
+          font-style: italic;
+
+          -webkit-transition: border 0.2s ease-out;
+          -moz-transition: border 0.2s ease-out;
+          -o-transition: border 0.2s ease-out;
+          transition: border 0.2s ease-out;
+        }
+
+        :hover {
+          border: 2px solid gray;
+
+        }
+      }
+
+
+
+  }
+
+}

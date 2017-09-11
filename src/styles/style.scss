@@ -1,0 +1,975 @@
+
+$fa-font-path: '~font-awesome/fonts';
+
+
+@import "~font-awesome/scss/font-awesome";
+@import "~animate.css/animate.css";
+@import './normalize';
+html {
+  font-family: 'Proxima Nova', 'Helvetica';
+
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-middle {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+
+
+// Navigation Styles //
+
+.navigation-wrapper {
+    position: relative;
+    z-index: 10;
+  }
+
+  .topnavigation {
+    padding: 35px 75px; // Media Querie
+    margin: 0px;
+    top: 0;
+    right: 0;
+    overflow: hidden; // Media Querie
+
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-end; // Media Querie
+    margin-right: 3em; // Media Querie
+    z-index: 10;
+  }
+
+
+
+  .navItem {
+    margin: 15px 25px; // Media Querie
+    color: white;
+    font-size: 17px;
+    letter-spacing: 3px;
+    font-weight:500;
+    transition: color .2s ease-in-out, transform .1s ease-in-out;
+
+    &:hover {
+      @extend .zoom-background-hover;
+      color: lightgray;
+    }
+  }
+
+
+
+
+    .fixed-navigation-wrapper {
+      display: none;
+      position: fixed;
+      height: 75px;
+      width: 100%;
+      top: 0;
+      z-index: 15;
+      background-color: white;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 10px 10px 300px #999;
+    }
+
+
+
+
+  .fixed-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+  }
+
+  .fixed-nav {
+
+    .navItem {
+      color: gray;
+      transition: color .2s ease-in-out, transform .1s ease-in-out;
+
+
+      &:hover {
+        @extend .zoom-background-hover;
+        color: lightgray;
+      }
+    }
+  }
+
+
+
+
+
+
+.mobile-navigation-wrapper {
+      position: relative;
+      display: none;
+      z-index: 100;
+    }
+
+.mobile-menu-navigation {
+  top: 0;
+  margin: 0;
+  left:0;
+  right: 0;
+}
+
+
+// Banner Styles //
+
+    .main-banner-background {
+      background:
+      linear-gradient(
+         rgba(0, 0, 0, 0.25),
+         rgba(255, 255, 255, 1)
+       ), url('../media/images/coffeesipping.jpeg');
+
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 925px;
+      position: relative;
+      top: -160px;
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+
+    }
+      .container {
+        height: inherit;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+      }
+        .main-banner-text {
+          color: white;
+          font-size: 30px;
+          letter-spacing: 10px;
+          margin-right: -10px;
+        }
+
+
+
+    .fa {
+      margin-bottom: 25px;
+      color: darkgray;
+      transition: color 0.2s ease-in-out, transform .2s ease-in-out;
+      &:hover {
+        color: gray;
+        @extend .zoom-background-hover;
+      }
+
+    }
+
+
+
+
+// SECTION HEADER //
+
+.section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: gray;
+  margin-bottom: 7em;
+
+}
+
+  .section-h4 {
+    letter-spacing: 1em;
+    margin-right: -1em;
+  }
+
+
+
+// PROCESS DESCRIPTION //
+
+
+  .section-h4 {
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-top: -50px;
+  }
+
+
+  .process-description {
+    margin-top: -150px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    }
+
+
+    .process-row {
+
+      padding-bottom: 3em;
+      padding: 20px 50px;
+
+      hr {
+        width: 50%;
+        background-color: gray;
+        margin-bottom: 35px;
+      }
+    }
+
+      .process-image-paragraph-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        padding: 5px 40px;
+        margin-bottom: 15px;
+
+
+
+        p {
+          flex-basis: 75%;
+
+        }
+
+      }
+
+      .process-row-image {
+        flex-basis: 25%;
+      }
+
+
+       > div:first-child {
+        flex: 1 0 100%;
+
+        h2 {
+          font-size: 30px;
+          margin-bottom: 0;
+        }
+
+      }
+
+      > hr {
+        flex: 0 0 50%;
+      }
+
+      .process-title {
+        font-size: 20px;
+        margin: 0 10px 25px 10px;
+      }
+
+
+
+
+    .paragraph-container {
+      color: black;
+      letter-spacing: .5px;
+      line-height: 25px;
+      padding: 1em 3em;
+    }
+
+    .process-row-image {
+      height: 110px;
+      width: 110px;
+      background: gray;
+    }
+
+
+
+
+.section-banner-background {
+  background:
+  linear-gradient(
+     rgba(255, 255, 255, 1),
+     rgba(0, 0, 0, 0.30),
+     rgba(255, 255, 255, 1)
+   ), url('../media/images/coffeefruit.jpeg');
+   opacity: .85;
+
+   background-position: top;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 750px; // Media Query to 500px
+   position: relative;
+   margin-bottom: 0;
+
+
+   }
+     .container {
+       height: inherit;
+       padding: 0 35px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       padding: 0 15%;
+     }
+       .section-banner-text {
+         h1 {
+           color: white;
+           text-shadow: 0px 0px 35px #000;
+           font-size: 25px;
+           letter-spacing: 10px;
+           margin-right: -10px;
+           text-align: center;
+         }
+
+         p {
+           text-align: center;
+           color: white;
+           text-shadow: 0px 0px 35px #000;
+           line-height: 25px;
+           font-weight: 600;
+           font-size: 21px;
+
+         }
+       }
+
+.cup-banner {
+  background:
+  linear-gradient(
+     rgba(255, 255, 255, 1),
+     rgba(0, 0, 0, 0.30),
+     rgba(255, 255, 255, 1)
+   ), url('../media/images/coffeebeans.jpeg');
+   opacity: .65;
+
+   background-position: top;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 750px; // Media Query to 500px
+   position: relative;
+   margin-bottom: 0;
+
+
+}
+      .container {
+        height: inherit;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+      }
+        .section-banner-text {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          h1 {
+            color: white;
+            text-shadow: 0px 0px 35px #000;
+            font-size: 25px;
+            letter-spacing: 10px;
+            margin-right: -10px;
+            text-align: center;
+          }
+
+          p {
+            text-align: center;
+            color: white;
+            text-shadow: 0px 0px 35px #000;
+            font-weight: 500;
+            font-size: 20px;
+
+          }
+
+
+    }
+
+
+    .button-hover {
+      margin-top: 40px;
+      background-color: white;
+      height: 4em;
+      width: 45%;
+      border-radius: 35px;
+      border: none;
+      font-weight: 600;
+      font-size: 15px;
+      letter-spacing: 2px;
+      color: black;
+      transition: background-color .2s ease-in-out, transform .2s ease-in-out;
+
+      &:hover {
+        @extend .zoom-background-hover;
+        background-color: lightgray;
+      }
+
+    }
+
+
+
+
+  .container {
+    margin: 45px 0px;
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+    .contact-section h2 {
+      letter-spacing: 10px;
+      margin-right: -10px;
+      color: gray;
+    }
+
+    .contact-info {
+        color: gray;
+        font-size: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .contact-info i, p {
+        margin: 10px 15px;
+        letter-spacing: 1.5px;
+        margin-right: -1.5px;
+        text-align: left;
+        transition: transform .2s ease-in-out, color .2s ease-in-out;
+
+
+      }
+
+      .contact-info i:hover {
+        @extend .zoom-background-hover;
+        color: lightgray;
+      }
+
+
+
+
+
+
+//!!!*** MEDIA QUERIES ***!!!//
+
+// !!! BEGIN 915PX MEDIA QUERY  !!! //
+
+@media (max-width: 600px) {
+
+    .navigation-wrapper {
+      display: none;
+      .topnavigation {
+        .nav {
+          .navItem {
+
+          }
+        }
+      }
+    }
+
+    .mobile-navigation-wrapper {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+
+
+          .mobile-menu-navigation {
+              background: white;
+              width: 100%;
+
+
+                  .hamburger {
+                    position: absolute;
+                    color: white;
+                    top: 0;
+                    right: 0;
+                    padding: 25px 10%;
+
+                  }
+
+                  .exit {
+                    position: absolute;
+                    color: gray;
+                    top: 0;
+                    right: 0;
+                    padding: 25px 10%;
+
+                  }
+
+            .mobile-nav {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              padding: 25px 5px 15px 5px;
+
+
+              .navItem {
+                position: relative;
+                color: gray;
+                font-size: 18px;
+                margin: 15px 0px;
+                font-weight: 500;
+              }
+            }
+          }
+    }
+
+
+
+    // MAIN BANNER //
+    .main-banner-background {
+      height: 750px;
+      top: -50px;
+      margin: 0;
+
+
+      .container {
+        .main-banner-text {
+          color: white;
+          font-size: 10px;
+          letter-spacing: 10px;
+          padding: 0 35px;
+          margin-top: 100px;
+          text-align: center;
+          flex-wrap: wrap;
+        }
+    }
+  }
+
+
+  //PROCESS SECTION//
+
+  .process {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    .section-header {
+      .section-h4 {
+        font-size: 18px;
+      }
+    }
+
+      .process-description {
+        margin-top: -100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin-right: 0;
+
+        .process-row {
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          padding: 8px 20px;
+          margin: 0;
+
+          .process-image-paragraph-container {
+            flex-direction: column;
+            padding: 10px 5px;
+          }
+
+
+          .process-title {
+            font-size: 20px;
+            margin: 0 10px 25px 10px;
+          }
+
+        .paragraph-container {
+          font-size: 12px;
+          line-height: normal;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+
+
+  .section-banner-background {
+
+    height: 500px;
+    .container {
+      padding: 0 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .section-banner-text {
+        h1 {
+
+          text-shadow: 0px 0px 35px #000;
+          font-size: 25px;
+          letter-spacing: 10px;
+          margin-right: -10px;
+          text-align: center;
+        }
+
+        p {
+          text-align: center;
+          text-shadow: 0px 0px 35px #000;
+          line-height: 25px;
+          font-weight: 600;
+          font-size: 16px;
+
+        }
+      }
+
+
+    }
+  }
+
+
+  .cup-banner {
+
+    height: 500px;
+
+    .container {
+      padding: 0 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+    }
+  }
+
+
+  .section-banner-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      color: white;
+      text-shadow: 0px 0px 35px #000;
+      font-size: 25px;
+      letter-spacing: 10px;
+      margin-right: -10px;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      color: white;
+      text-shadow: 0px 0px 35px #000;
+      line-height: 25px;
+      font-weight: 600;
+
+    }
+
+
+  }
+
+  .section-banner-text button  {
+
+    margin-top: 40px;
+    background: white;
+    height: 4em;
+    width: 90%;
+    border-radius: 35px;
+    border: none;
+    font-weight: 600;
+    font-size: 12px;
+    color: black;
+    letter-spacing: 2px;
+    margin-right: -2px;
+
+
+    &:hover {
+      background: black;
+    }
+  }
+
+    .contact {
+      .container {
+        margin: 45px 0px;
+
+
+        .contact-section {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          h2 {
+            letter-spacing: 10px;
+            margin-right: -10px;
+            color: gray;
+            font-size: 21px;
+          }
+
+            .contact-info {
+              color: gray;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              i, p {
+                margin: 5px 7px;
+                font-size: 15px;
+                letter-spacing: 1.5px;
+                margin-right: -1.5px;
+                text-align: left;
+              }
+          }
+        }
+      }
+    }
+
+
+}
+
+// !!!!! //
+
+// !!! BEGIN 915PX MEDIA QUERY  !!! //
+
+@media (max-width: 915px) and (min-width: 601px) {
+
+
+  // !!! NAVIGATION CSS !!! //
+
+  .navigation-wrapper {
+
+
+    .topnavigation {
+      .nav {
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+        .navItem {
+        font-size: 15px;
+        }
+      }
+    }
+  }
+
+  // !!! BANNER CSS !!! //
+
+
+  .main-banner-background {
+
+    height: 750px;
+    margin: 0;
+    margin-bottom: -100px;
+
+
+    .container {
+      .main-banner-text {
+        font-size: 18px;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        padding: 35px;
+        text-align: center;
+      }
+    }
+  }
+
+  // !!! PROCESS CSS !!! //
+
+  .process {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+      .section-header {
+        .section-h4 {
+          font-size: 21px;
+        }
+      }
+
+
+      .process-description {
+        margin-top: -125px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .process-row {
+
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+
+
+          .process-image-paragraph-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            padding: 40px;
+            margin-bottom: 15px;
+
+            .process-row-image {
+              flex-basis: 25%;
+            }
+
+            p {
+              flex-basis: 75%;
+            }
+
+          }
+
+
+           > div:first-child {
+            flex: 1 0 100%;
+
+            h2 {
+              font-size: 30px;
+              margin-bottom: 0;
+            }
+
+          }
+
+          > hr {
+            flex: 0 0 50%;
+          }
+
+          .process-title {
+            font-size: 20px;
+            margin: 0 10px 25px 10px;
+          }
+
+        .paragraph-container {
+          font-size: 12px;
+          line-height: normal;
+          text-align: left;
+        }
+
+        .process-row-image {
+          height: 125px;
+          width: 110px;
+          background: gray;
+        }
+      }
+    }
+  }
+
+
+  // !!! OUR WHY CSS !!! //
+
+
+  .section-banner-background {
+
+    height: 550px;
+
+    .container {
+      padding: 0 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .section-banner-text {
+        h1 {
+          color: fff;
+          text-shadow: 0px 0px 35px #000;
+          font-size: 25px;
+          letter-spacing: 10px;
+          margin-right: -10px;
+          text-align: center;
+        }
+
+        p {
+          text-align: center;
+          color: #fff;
+          text-shadow: 0px 0px 35px #000;
+          line-height: 25px;
+          font-weight: 600;
+
+        }
+
+
+
+      }
+
+
+    }
+  }
+
+.cup-banner {
+
+  height: 550px;
+
+  .container {
+    .section-banner-text {
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+
+
+}
+
+// END MEDIA QUERY //
+
+@media (max-width: 1250px) {
+
+
+  .process-container {
+    display: flex;
+    flex-wrap: wrap;
+
+
+  }
+
+  .main-banner-text {
+    font-size: 20px;
+  }
+}
+
+
+
+// EFFECTS //
+
+.zoom-background-hover {
+  transform: scale(1.02);
+  transition-duration: .4s;
+}
