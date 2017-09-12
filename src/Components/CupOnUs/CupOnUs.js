@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Modal from './Modal';
 export default class CupOnUs extends React.Component {
   render() {
     return (
@@ -12,7 +12,9 @@ export default class CupOnUs extends React.Component {
             </div>
 
         </div>
+        <Modal />
       </div>
+
     )
   }
 }

@@ -12,6 +12,7 @@ html {
 
 *:focus {
   text-decoration: none;
+  outline: none;
 }
 body {
   margin: 0;
@@ -39,7 +40,12 @@ a {
   flex-direction: row;
 }
 
+.scale-in {
+  transform: scale(1.1);
+  transition-duration: .75s;
 
+
+}
 
 // Navigation Styles //
 
@@ -945,6 +951,24 @@ a {
     }
   }
 }
+
+.cupModal {
+  display: none;
+  position: fixed;
+}
+
+.modal-content {
+
+}
+
+.closeModal {
+
+}
+
+.emailInput {
+
+}
+
 
 
 

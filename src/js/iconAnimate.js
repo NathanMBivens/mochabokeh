@@ -10,20 +10,20 @@ module.exports.iconAnimate = () => {
 
       var $allProcessImages = $imageElement.filter(function() {
          var $this = $(this);
-         var topOfElement = $this.scrollTop().top;
-         var bottomOfElement = $this.outerHeight();
+         var topOfElement = $this.offset().top;
+         var bottomOfElement = topOfElement + $this.outerHeight();
          var bottomOfWindow = win.scrollTop() + win.height();
          var topOfWindow = win.scrollTop();
 
-         return ((bottomOfWindow > topOfElement) && (bottomOfElement > topOfWindow));
+
+         if ((bottomOfWindow > topOfElement) && (bottomOfElement > topOfWindow)) {
+            $(this).addClass('scale-in');
+         } else {
+            $(this).removeClass('scale-in');
+         }
+      });
       });
 
-      if ($allProcessImages.length) {
-         console.log('Here we are.')
-         $(this).addClass('scale-in');
-      } else {
-         $(this).removeClass('scale-in');
-      }
-   })
+
 
 };
