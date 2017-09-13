@@ -6,16 +6,25 @@ module.exports.openModal = () => {
 
   var modal = $('.cupModal');
   var btn = $('.button-hover');
+  var submitButton = $('.submitEmail');
   var span = $('.closeModal');
 
   btn.click(function() {
-    $(modal).css("display", "block");
+
+    $(modal).fadeIn();
+    $(modal).css("display", "flex");
+
 
   });
 
   span.click(function() {
-    $(modal).css("display", "none");
+    $(modal).fadeOut();
+    $("body").css("filter", "none");
   });
+
+  submitButton.click(function() {
+    $(modal).fadeOut();
+  })
 
   $(window).click(function(event) {
     if (event.target == modal) {
