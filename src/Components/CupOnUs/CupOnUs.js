@@ -4,6 +4,7 @@ export default class CupOnUs extends React.Component {
   render() {
     return (
       <div className="cup-banner" id="cuponus">
+
         <div className="container">
             <div className="section-banner-text">
               <h1> CUP ON US </h1>
@@ -12,7 +13,7 @@ export default class CupOnUs extends React.Component {
             </div>
 
         </div>
-        <Modal />
+
       </div>
 
     )

@@ -41,8 +41,8 @@ a {
 }
 
 .scale-in {
-  transform: scale(1.1);
-  transition-duration: .75s;
+  transform: scale(1.2);
+  transition-duration: .3s;
 
 
 }
@@ -767,6 +767,30 @@ a {
 
 }
 
+.cupModal {
+  display: none;
+  z-index: 10;
+  position: fixed;
+  height: 150px;
+  width: 300px;
+  background: green;
+  left: 0;
+  top: 0;
+
+}
+
+.modal-content {
+
+}
+
+.closeModal {
+
+}
+
+.emailInput {
+
+}
+
 // !!!!! //
 
 // !!! BEGIN 915PX MEDIA QUERY  !!! //
@@ -951,26 +975,6 @@ a {
     }
   }
 }
-
-.cupModal {
-  display: none;
-  position: fixed;
-}
-
-.modal-content {
-
-}
-
-.closeModal {
-
-}
-
-.emailInput {
-
-}
-
-
-
 
 
 }
